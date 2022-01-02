@@ -1,6 +1,7 @@
 // import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:twitter_mock_app/routing_constants.dart';
 
@@ -118,7 +119,7 @@ class _CommonHomeLayoutState extends State<CommonHomeLayout> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.message,
+                MdiIcons.emailOutline,
               ),
               label: 'Settings',
             ),

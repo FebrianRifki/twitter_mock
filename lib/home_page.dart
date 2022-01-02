@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:twitter_mock_app/componen/common_home_layout.dart';
 import 'package:twitter_mock_app/componen/common_layout.dart';
@@ -46,9 +47,10 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CircleAvatar(
-                    radius: 25,
-                    backgroundColor: Colors.grey,
-                  ),
+                      radius: 25,
+                      backgroundColor: Colors.grey,
+                      backgroundImage: NetworkImage(
+                          'https://static.wikia.nocookie.net/codegeass/images/6/6a/LelouchviBritannia.jpg/revision/latest/scale-to-width-down/1000?cb=20120107132514')),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.only(left: 5.0),
@@ -57,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                           Row(
                             children: [
                               Text(
-                                'Random Guy 1',
+                                'Lelouch Lamperouge',
                                 style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.w600,
@@ -67,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                                 width: 2,
                               ),
                               Text(
-                                '@randomNiceGuy - 10h',
+                                '@Lelouch · 10h',
                                 style:
                                     TextStyle(fontSize: 12, color: Colors.grey),
                               ),
@@ -90,27 +92,27 @@ class _HomePageState extends State<HomePage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Icon(
-                                Icons.mode_comment_rounded,
-                                size: 18,
+                                MdiIcons.chatOutline,
+                                size: 20,
                                 color: Colors.grey,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.refresh_outlined,
+                                MdiIcons.repeatVariant,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 25,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.link_rounded,
+                                MdiIcons.heartOutline,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer(),
                               Icon(
                                 Icons.share_outlined,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer()
                             ],
@@ -137,6 +139,8 @@ class _HomePageState extends State<HomePage> {
                   CircleAvatar(
                     radius: 25,
                     backgroundColor: Colors.grey,
+                    backgroundImage: NetworkImage(
+                        'https://cdn.idntimes.com/content-images/community/2020/04/4862-f54bf213073e9d3dc44e13fcfa7d0a03_600x400.jpg'),
                   ),
                   Expanded(
                     child: Padding(
@@ -146,7 +150,7 @@ class _HomePageState extends State<HomePage> {
                           Row(
                             children: [
                               Text(
-                                'Random Guy 2',
+                                'Yui Yoshioka',
                                 style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.w600,
@@ -156,7 +160,7 @@ class _HomePageState extends State<HomePage> {
                                 width: 2,
                               ),
                               Text(
-                                '@randomNiceGuy - 3h',
+                                '@yuiyoshioka · 3h',
                                 style:
                                     TextStyle(fontSize: 12, color: Colors.grey),
                               ),
@@ -179,27 +183,27 @@ class _HomePageState extends State<HomePage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Icon(
-                                Icons.mode_comment_rounded,
-                                size: 18,
+                                MdiIcons.chatOutline,
+                                size: 20,
                                 color: Colors.grey,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.refresh_outlined,
+                                MdiIcons.repeatVariant,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 25,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.link_rounded,
+                                MdiIcons.heartOutline,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer(),
                               Icon(
                                 Icons.share_outlined,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer()
                             ],
@@ -226,6 +230,8 @@ class _HomePageState extends State<HomePage> {
                   CircleAvatar(
                     radius: 25,
                     backgroundColor: Colors.grey,
+                    backgroundImage: NetworkImage(
+                        'https://cdn.idntimes.com/content-images/community/2021/07/annin-keriting-14ed8d4b1242b4be186fcf6f2977b211-87df67626fa15c0382f7980462bc1514.jpg'),
                   ),
                   Expanded(
                     child: Padding(
@@ -235,7 +241,7 @@ class _HomePageState extends State<HomePage> {
                           Row(
                             children: [
                               Text(
-                                'Random Guy 3',
+                                'Iriyama Anna',
                                 style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.w600,
@@ -245,7 +251,7 @@ class _HomePageState extends State<HomePage> {
                                 width: 2,
                               ),
                               Text(
-                                '@randomNiceGuy - 4h',
+                                '@iriyamaa1203 · 4h',
                                 style:
                                     TextStyle(fontSize: 12, color: Colors.grey),
                               ),
@@ -268,27 +274,27 @@ class _HomePageState extends State<HomePage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Icon(
-                                Icons.mode_comment_rounded,
-                                size: 18,
+                                MdiIcons.chatOutline,
+                                size: 20,
                                 color: Colors.grey,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.refresh_outlined,
+                                MdiIcons.repeatVariant,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 25,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.link_rounded,
+                                MdiIcons.heartOutline,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer(),
                               Icon(
                                 Icons.share_outlined,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer()
                             ],
@@ -315,6 +321,8 @@ class _HomePageState extends State<HomePage> {
                   CircleAvatar(
                     radius: 25,
                     backgroundColor: Colors.grey,
+                    backgroundImage: NetworkImage(
+                        'https://cdn.idntimes.com/content-images/post/20211004/cloud-3-fe8fe4e3ea280431490d829d39eafe21.jpg'),
                   ),
                   Expanded(
                     child: Padding(
@@ -324,7 +332,7 @@ class _HomePageState extends State<HomePage> {
                           Row(
                             children: [
                               Text(
-                                'Random Guy 4',
+                                'Cloud Strife',
                                 style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.w600,
@@ -334,7 +342,7 @@ class _HomePageState extends State<HomePage> {
                                 width: 2,
                               ),
                               Text(
-                                '@randomNiceGuy - 2h',
+                                '@CloudStrife · 2h',
                                 style:
                                     TextStyle(fontSize: 12, color: Colors.grey),
                               ),
@@ -357,27 +365,27 @@ class _HomePageState extends State<HomePage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Icon(
-                                Icons.mode_comment_rounded,
-                                size: 18,
+                                MdiIcons.chatOutline,
+                                size: 20,
                                 color: Colors.grey,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.refresh_outlined,
+                                MdiIcons.repeatVariant,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 25,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.link_rounded,
+                                MdiIcons.heartOutline,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer(),
                               Icon(
                                 Icons.share_outlined,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer()
                             ],
@@ -402,9 +410,10 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CircleAvatar(
-                    radius: 25,
-                    backgroundColor: Colors.grey,
-                  ),
+                      radius: 25,
+                      backgroundColor: Colors.grey,
+                      backgroundImage: NetworkImage(
+                          'https://cdn.anisearch.com/images/character/cover/full/70/70000.webp')),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.only(left: 5.0),
@@ -413,7 +422,7 @@ class _HomePageState extends State<HomePage> {
                           Row(
                             children: [
                               Text(
-                                'Random Guy 5',
+                                'Rindō Kobayashi',
                                 style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.w600,
@@ -423,7 +432,7 @@ class _HomePageState extends State<HomePage> {
                                 width: 2,
                               ),
                               Text(
-                                '@randomNiceGuy - 6h',
+                                '@kobayasi · 6h',
                                 style:
                                     TextStyle(fontSize: 12, color: Colors.grey),
                               ),
@@ -446,27 +455,27 @@ class _HomePageState extends State<HomePage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Icon(
-                                Icons.mode_comment_rounded,
-                                size: 18,
+                                MdiIcons.chatOutline,
+                                size: 20,
                                 color: Colors.grey,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.refresh_outlined,
+                                MdiIcons.repeatVariant,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 25,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.link_rounded,
+                                MdiIcons.heartOutline,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer(),
                               Icon(
                                 Icons.share_outlined,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer()
                             ],
@@ -484,7 +493,8 @@ class _HomePageState extends State<HomePage> {
           color: Colors.grey,
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 5),
+          padding:
+              const EdgeInsets.only(left: 15.0, right: 15.0, top: 5, bottom: 5),
           child: Column(
             children: [
               Row(
@@ -493,6 +503,8 @@ class _HomePageState extends State<HomePage> {
                   CircleAvatar(
                     radius: 25,
                     backgroundColor: Colors.grey,
+                    backgroundImage: NetworkImage(
+                        'https://aramajapan.com/wp-content/uploads/2020/11/aramajapan.com-tomohisa-yamashita-has-left-johnnys-tomohisa-yamashita-has-left-johnnys.jpg'),
                   ),
                   Expanded(
                     child: Padding(
@@ -502,7 +514,7 @@ class _HomePageState extends State<HomePage> {
                           Row(
                             children: [
                               Text(
-                                'Random Guy 6',
+                                'Tomohisa Yamashita',
                                 style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.w600,
@@ -512,7 +524,7 @@ class _HomePageState extends State<HomePage> {
                                 width: 2,
                               ),
                               Text(
-                                '@randomNiceGuy - 8h',
+                                '@Yamaken · 8h',
                                 style:
                                     TextStyle(fontSize: 12, color: Colors.grey),
                               ),
@@ -535,27 +547,27 @@ class _HomePageState extends State<HomePage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Icon(
-                                Icons.mode_comment_rounded,
-                                size: 18,
+                                MdiIcons.chatOutline,
+                                size: 20,
                                 color: Colors.grey,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.refresh_outlined,
+                                MdiIcons.repeatVariant,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 25,
                               ),
                               Spacer(),
                               Icon(
-                                Icons.link_rounded,
+                                MdiIcons.heartOutline,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer(),
                               Icon(
                                 Icons.share_outlined,
                                 color: Colors.grey,
-                                size: 18,
+                                size: 20,
                               ),
                               Spacer()
                             ],
@@ -568,9 +580,6 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
-        ),
-        Divider(
-          color: Colors.grey,
         ),
       ]),
       Positioned(
